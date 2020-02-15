@@ -2,6 +2,7 @@ import React from 'react'
 import LoginPanel from '../src/components/blocks/LoginPanel'
 import styled from 'styled-components'
 import LoginInputField from '../src/components/blocks/LoginInputField'
+import LoginButton from '../src/components/blocks/LoginButton'
 
 export default {
   title: 'Login Panel',
@@ -37,6 +38,18 @@ export const LoginInputFieldStory = () => (
       <LoginInputField>
         <LoginInputField.StyledInput type='submit' value='Log in' />
       </LoginInputField>
+    </LoginInputFieldContainer>
+  </StoryStyle>
+)
+export const LoginButtonStory = () => (
+  <StoryStyle>
+    <LoginInputFieldContainer>
+      <LoginButton>
+        <LoginButton.Icon />
+        <LoginButton.StyledText>
+        Log in with Facebook
+        </LoginButton.StyledText>
+      </LoginButton>
     </LoginInputFieldContainer>
   </StoryStyle>
 )
