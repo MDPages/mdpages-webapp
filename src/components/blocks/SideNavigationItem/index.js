@@ -5,6 +5,7 @@ import Text from './Text'
 
 const SideNavigationItem = styled.li`
   overflow: hidden;
+  display: block;
 `
 
 SideNavigationItem.StyledLink = StyledLink

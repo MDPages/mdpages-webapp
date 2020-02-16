@@ -13,6 +13,23 @@ const StoryStyle = styled.div`
   min-height: 100vh;
 `
 
+const SideNavigationItemContainer = styled.div`
+  width: 400px;
+`
+
+export const SideNavigationItemStory = () => (
+  <StoryStyle>
+    <SideNavigationItemContainer>
+      <SideNavigationItem>
+        <SideNavigationItem.StyledLink>
+          <SideNavigationItem.Icon icon={faFlag} />
+          <SideNavigationItem.Text>Home</SideNavigationItem.Text>
+        </SideNavigationItem.StyledLink>
+      </SideNavigationItem>
+    </SideNavigationItemContainer>
+  </StoryStyle>
+)
+
 export const SideNavigationItemsStory = () => (
   <StoryStyle>
     <SideNavigation>
