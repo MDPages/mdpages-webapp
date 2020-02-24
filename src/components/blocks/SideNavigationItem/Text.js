@@ -10,6 +10,7 @@ const Text = styled.p`
   color: #7B7D8E;
   text-decoration: none;
   user-select: none;
+  overflow-wrap: break-word;
 `
 
 export default Text
