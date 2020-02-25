@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
 
+// This calculation is only used for more quality transition
 const show = css`
   height: calc(39 * ${props => props.length}px);
 `
