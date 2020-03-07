@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import LeftNavigation from '../src/components/blocks/LeftNavigation'
 import LeftNavigationItem from '../src/components/blocks/LeftNavigationItem'
 import { faFlag } from '@fortawesome/free-regular-svg-icons'
+import { faSortDown } from '@fortawesome/free-solid-svg-icons'
 
 export default {
   title: 'LeftNavigation',
@@ -30,18 +31,23 @@ export const LeftNavigationItemStory = () => (
   </StoryStyle>
 )
 
-const Div = styled.div``
+const DropdownHeader = styled.div`
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+`
 
 export const LeftNavigationDropdownStory = () => {
   const Dropdown = () => {
     const [show, setShow] = useState(false)
     return (
       <LeftNavigationItem>
-        <LeftNavigationItem.StyledLink as={Div} onClick={() => setShow(!show)}>
+        <LeftNavigationItem.StyledLink as={DropdownHeader} onClick={() => setShow(!show)}>
           <LeftNavigationItem.Icon icon={faFlag} />
           <LeftNavigationItem.Text>Dropdown</LeftNavigationItem.Text>
         </LeftNavigationItem.StyledLink>
         <LeftNavigationItem.Dropdown show={show} length={2}>
+          <LeftNavigationItem.Arrow icon={faSortDown} />
           <LeftNavigationItem>
             <LeftNavigationItem.StyledLink>
               <LeftNavigationItem.Icon icon={faFlag} />
@@ -77,7 +83,7 @@ export const LeftNavigationItemsStory = () => (
       <LeftNavigation.Image />
       <LeftNavigation.List>
         <LeftNavigationItem>
-          <LeftNavigationItem.StyledLink>
+          <LeftNavigationItem.StyledLink href='#'>
             <LeftNavigationItem.Icon icon={faFlag} />
             <LeftNavigationItem.Text>Home</LeftNavigationItem.Text>
           </LeftNavigationItem.StyledLink>

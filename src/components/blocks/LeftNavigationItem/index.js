@@ -3,7 +3,7 @@ import Icon from './Icon'
 import StyledLink from './StyledLink'
 import Text from './Text'
 import Dropdown from './Dropdown'
-
+import Arrow from './Arrow'
 const LeftNavigationItem = styled.li`
   overflow: hidden;
   display: block;
@@ -29,5 +29,6 @@ LeftNavigationItem.StyledLink = StyledLink
 LeftNavigationItem.Icon = Icon
 LeftNavigationItem.Text = Text
 LeftNavigationItem.Dropdown = Dropdown
+LeftNavigationItem.Arrow = Arrow
 
 export default LeftNavigationItem

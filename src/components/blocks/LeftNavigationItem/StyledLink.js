@@ -1,5 +1,9 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import Text from './Text'
+
+const show = css`
+
+`
 
 const StyledLink = styled.a`
   display: flex;
@@ -8,10 +12,13 @@ const StyledLink = styled.a`
   cursor: pointer;
   border-left: 2px solid #282d37;
   transition: 300ms all;
+  text-decoration: none;
   
-  &:hover >${Text} {
+  &:hover > ${Text} {
     background-color: #323844;
   }
+  
+  ${props => props.show & show}
 `
 
 export default StyledLink
