@@ -11,16 +11,16 @@ const show = css`
   }
 `
 
-const List = styled.ol`
+const Dropdown = styled.ol`
   background-color: #1f232d;
   height: 0;
   transition: 200ms height;
   ${props => props.show && show}
 `
 
-List.propTypes = {
+Dropdown.propTypes = {
   show: PropTypes.bool.isRequired,
   length: PropTypes.number.isRequired
 }
 
-export default List
+export default Dropdown
