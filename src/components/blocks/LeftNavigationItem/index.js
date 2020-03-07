@@ -4,7 +4,7 @@ import StyledLink from './StyledLink'
 import Text from './Text'
 import Dropdown from './Dropdown'
 
-const SideNavigationItem = styled.li`
+const LeftNavigationItem = styled.li`
   overflow: hidden;
   display: block;
   border-left: 2px solid #282d37;
@@ -25,9 +25,9 @@ const SideNavigationItem = styled.li`
   }
 `
 
-SideNavigationItem.StyledLink = StyledLink
-SideNavigationItem.Icon = Icon
-SideNavigationItem.Text = Text
-SideNavigationItem.Dropdown = Dropdown
+LeftNavigationItem.StyledLink = StyledLink
+LeftNavigationItem.Icon = Icon
+LeftNavigationItem.Text = Text
+LeftNavigationItem.Dropdown = Dropdown
 
-export default SideNavigationItem
+export default LeftNavigationItem
