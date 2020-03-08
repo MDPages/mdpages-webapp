@@ -9,6 +9,7 @@ const LeftNavigation = styled.nav`
   background-color: #282d37;
   min-height: 100vh;
   max-height: 100vh;
+  overflow-y: auto;
 `
 
 LeftNavigation.Image = Image

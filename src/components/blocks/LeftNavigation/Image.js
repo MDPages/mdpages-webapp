@@ -5,6 +5,7 @@ const Image = styled.img`
   padding: 20px;
   background-color: #1f232d;
   border-radius: 15px;
+  user-select: none;
 `
 
 export default Image

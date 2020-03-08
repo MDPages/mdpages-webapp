@@ -9,6 +9,7 @@ const show = css`
   height: calc(39 * ${props => props.length}px);
   
   ${Arrow} {
+    top: 10px;
     transform: rotate(0);
   }
 `
