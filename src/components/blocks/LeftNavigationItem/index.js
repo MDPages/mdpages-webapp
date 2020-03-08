@@ -7,13 +7,11 @@ import Arrow from './Arrow'
 const LeftNavigationItem = styled.li`
   overflow: hidden;
   display: block;
-  border-left: 2px solid #282d37;
   transition: 200ms border-left-color;
   
   &:hover {
-    border-left-color: #E96B72;
-    
     > ${StyledLink} {
+    border-left-color: #E96B72;
       > ${Icon} {
         color: #E96B72;
       }
@@ -21,6 +19,9 @@ const LeftNavigationItem = styled.li`
       > ${Text} {
         color: #E96B72;
       }
+    }
+    > ${Dropdown} {
+      border-left-color: #E96B72;
     }
   }
 `

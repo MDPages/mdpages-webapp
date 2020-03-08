@@ -1,6 +1,8 @@
 import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
 import Arrow from './Arrow'
+import LeftNavigationItem from './index'
+import StyledLink from './StyledLink'
 
 // This calculation is only used for more quality transition
 const show = css`
@@ -14,7 +16,13 @@ const show = css`
 const Dropdown = styled.ol`
   background-color: #1f232d;
   height: 0;
-  transition: 200ms height;
+  border-left: 2px solid #1f232d;
+  transition: 200ms all;
+  
+  ${LeftNavigationItem} ${StyledLink} {
+    border-left-color: #1f232d;
+  }
+  
   ${props => props.show && show}
 `
 
