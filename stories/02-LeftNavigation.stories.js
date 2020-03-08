@@ -5,6 +5,7 @@ import LeftNavigationItem from '../src/components/blocks/LeftNavigationItem'
 import { faFlag } from '@fortawesome/free-regular-svg-icons'
 import { faSortDown } from '@fortawesome/free-solid-svg-icons'
 import logo from '../src/assets/images/logo.png'
+import LeftNavigationMobile from '../src/components/blocks/LeftNavigationMobile'
 
 export default {
   title: 'LeftNavigation',
@@ -83,9 +84,11 @@ export const LeftNavigationItemsStory = () => {
   return (
     <StoryStyle>
       <LeftNavigation>
-        <LeftNavigation.StyledLink href='#'>
-          <LeftNavigation.Image src={logo} alt='logo' />
-        </LeftNavigation.StyledLink>
+        <LeftNavigation.LogoWrapper>
+          <LeftNavigation.StyledLink href='#'>
+            <LeftNavigation.Image src={logo} alt='logo' />
+          </LeftNavigation.StyledLink>
+        </LeftNavigation.LogoWrapper>
         <LeftNavigation.List>
           <LeftNavigationItem>
             <LeftNavigationItem.StyledLink href='#'>

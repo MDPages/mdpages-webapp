@@ -1,11 +1,10 @@
 import styled from 'styled-components'
 
 const Image = styled.img`
-  display: block;
-  max-width: 240px;
-  margin: 0 auto;
-  padding: 40px;
-  cursor: pointer;
+  width: 100%;
+  padding: 20px;
+  background-color: #1f232d;
+  border-radius: 15px;
 `
 
 export default Image

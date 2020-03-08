@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Image from './Image'
 import List from './List'
 import StyledLink from './StyledLink'
+import LogoWrapper from './LogoWrapper'
 
 const LeftNavigation = styled.nav`
   width: 250px;
@@ -13,5 +14,6 @@ const LeftNavigation = styled.nav`
 LeftNavigation.Image = Image
 LeftNavigation.List = List
 LeftNavigation.StyledLink = StyledLink
+LeftNavigation.LogoWrapper = LogoWrapper
 
 export default LeftNavigation
